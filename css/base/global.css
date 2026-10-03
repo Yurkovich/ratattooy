@@ -15,7 +15,7 @@ html {
 .body {
   position: relative;
   min-width: 425px;
-  min-height: 100svh;
+  min-height: 200svh;
   font-family: var(--ff-main), sans-serif;
   color: var(--main-text);
   background: var(--main-bg);
