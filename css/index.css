@@ -1,0 +1,12 @@
+/* base */
+@import './base/reset.css';
+@import './base/swiper-bundle.min.css';
+@import './base/fonts.css';
+@import './base/global.css';
+
+/* blocks */
+@import './blocks/header.css';
+@import './blocks/hero.css';
+@import './blocks/portfolio.css';
+@import './blocks/testimonials.css';
+@import './blocks/footer.css';

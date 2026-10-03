@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display Heavy'), local('SFProDisplay-Heavy'),
+        url('../../fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('../../fonts/SFProDisplay-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProText';
+    src: local('SFProText'), local('SFProText'),
+        url('../../fonts/SFProText-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProText';
+    src: local('SFProText'), local('SFProText'),
+        url('../../fonts/SFProText-Medium.woff2') format('woff2');
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'SFProText';
+    src: local('SFProText'), local('SFProText'),
+        url('../../fonts/SFProText-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SFProText';
+    src: local('SFProText'), local('SFProText'),
+        url('../../fonts/SFProText-Light.woff2') format('woff2');
+    font-weight: light;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'RIVERHACK_CYR';
+    src: url('../../fonts/riverhack-syr.woff2') format('woff2'),
+        url('../../fonts/riverhack-syr.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

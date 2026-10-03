@@ -1,0 +1,83 @@
+.header {}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  padding: clamp(2rem, 1.48rem + 1.42vw, 4rem) 0;
+}
+
+.header__logo {
+  font-size: clamp(3.2rem, 2.68rem + 1.42vw, 5.2rem);
+  font-family: var(--ff-title);
+  margin-right: clamp(2rem, -2.99rem + 13.48vw, 21rem);
+}
+
+.header__contact {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.header__nav {
+  margin-left: auto;
+  margin-right: clamp(2rem, -1.8rem + 10.28vw, 16.5rem);
+}
+
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: clamp(2rem, 1.42rem + 1.56vw, 4.2rem);
+}
+
+.header__item {}
+
+.header__link {
+  font-size: 18px;
+}
+
+.header__action {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .header__action {
+    display: none;
+  }
+
+  .header__contact {
+    display: none;
+  }
+
+  .header__nav {
+    display: none;
+  }
+}
+
+/* Бургер-меню */
+
+@media (width > 768px) {
+  .burger {
+    display: none;
+  }
+}
+
+@media (width <=768px) {
+  .burger {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+  }
+
+  .burger__icon-menu,
+  .burger--open .burger__icon-cross {
+    display: block;
+  }
+
+  .burger__icon-cross,
+  .burger--open .burger__icon-menu {
+    display: none;
+  }
+}

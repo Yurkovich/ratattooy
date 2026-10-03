@@ -1,0 +1,43 @@
+
+:root {
+  --main-bg: #D9D9D9;
+  --main-text: #070707;
+  --ff-title: "RIVERHACK_CYR";
+  --ff-main: 'SFProText';
+}
+
+html {
+  font-size: 10px !important;
+  font-weight: 400;
+  scroll-behavior: smooth;
+}
+
+.body {
+  position: relative;
+  min-width: 425px;
+  min-height: 100svh;
+  font-family: var(--ff-main), sans-serif;
+  color: var(--main-text);
+  background: var(--main-bg);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+  max-width: 1780px;
+}
