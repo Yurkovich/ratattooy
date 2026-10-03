@@ -17,7 +17,7 @@ html {
 
 .body {
   position: relative;
-  min-width: 425px;
+  min-width: 320px;
   font-family: var(--ff-main), sans-serif;
   color: var(--main-text);
   background: var(--main-bg);
