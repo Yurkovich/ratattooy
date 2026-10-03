@@ -4,6 +4,9 @@
   --main-text: #070707;
   --ff-title: "RIVERHACK_CYR";
   --ff-main: 'SFProText';
+  --accent: #F47521;
+  --transition-fast: 180ms ease-out;
+  --transition-base: 280ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 html {
@@ -15,7 +18,6 @@ html {
 .body {
   position: relative;
   min-width: 425px;
-  min-height: 200svh;
   font-family: var(--ff-main), sans-serif;
   color: var(--main-text);
   background: var(--main-bg);
@@ -40,4 +42,10 @@ body {
   padding: 0 15px;
   height: 100%;
   max-width: 1780px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
 }

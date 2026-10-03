@@ -31,7 +31,15 @@
   flex-direction: column;
   border-radius: 42px;
   padding: 30px;
-  border: 1px solid var(--main-text)
+  border: 1px solid var(--main-text);
+  transition: border-color var(--transition-base), background-color var(--transition-base);
+}
+
+@media (hover: hover) {
+  .testimonials__item:hover {
+    border-color: var(--accent);
+    background-color: rgba(244, 117, 33, 0.06);
+  }
 }
 
 .testimonials__text {
@@ -102,11 +110,37 @@
   height: 12px;
 }
 
+.testimonials__controls path {
+  transition: stroke var(--transition-fast);
+}
+
 .testimonials__controls-next,
 .testimonials__controls-prev {
   padding: clamp(1.8rem, 1.64rem + 0.43vw, 2.4rem) clamp(1.6rem, 1.44rem + 0.43vw, 2.2rem);
   border: 1px solid var(--main-text);
   border-radius: 100%;
+  transition: color var(--transition-fast), border-color var(--transition-fast), background-color var(--transition-base), transform var(--transition-base);
+}
+
+@media (hover: hover) {
+  .testimonials__controls-prev:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background-color: rgba(244, 117, 33, 0.1);
+    transform: translateX(-3px);
+  }
+
+  .testimonials__controls-prev:hover path,
+  .testimonials__controls-next:hover path {
+    stroke: var(--accent);
+  }
+
+  .testimonials__controls-next:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+    background-color: rgba(244, 117, 33, 0.1);
+    transform: translateX(3px);
+  }
 }
 
 .swiper-button-disabled {

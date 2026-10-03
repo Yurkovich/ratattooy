@@ -10,11 +10,47 @@
   font-size: clamp(3.2rem, 2.68rem + 1.42vw, 5.2rem);
   font-family: var(--ff-title);
   margin-right: clamp(2rem, -2.99rem + 13.48vw, 21rem);
+  transition: color var(--transition-fast), transform var(--transition-base);
+}
+
+@media (hover: hover) {
+  .header__logo:hover {
+    color: var(--accent);
+    transform: rotate(-3deg) translateY(-2px);
+  }
 }
 
 .header__contact {
+  position: relative;
   font-size: 18px;
   font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.header__contact::after,
+.header__link::after,
+.header__action::after {
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  content: '';
+  background: var(--accent);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--transition-base);
+}
+
+@media (hover: hover) {
+  .header__contact:hover {
+    color: var(--accent);
+  }
+
+  .header__contact:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 .header__nav {
@@ -31,11 +67,37 @@
 .header__item {}
 
 .header__link {
+  position: relative;
   font-size: 18px;
+  transition: color var(--transition-fast);
+}
+
+@media (hover: hover) {
+  .header__link:hover {
+    color: var(--accent);
+  }
+
+  .header__link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 .header__action {
+  position: relative;
   font-size: 18px;
+  transition: color var(--transition-fast);
+}
+
+@media (hover: hover) {
+  .header__action:hover {
+    color: var(--accent);
+  }
+
+  .header__action:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 }
 
 @media (max-width: 768px) {
@@ -69,6 +131,7 @@
     width: 24px;
     height: 24px;
     margin-left: auto;
+    transition: color var(--transition-fast), transform var(--transition-base);
   }
 
   .burger__icon-menu,
@@ -79,5 +142,12 @@
   .burger__icon-cross,
   .burger--open .burger__icon-menu {
     display: none;
+  }
+}
+
+@media (width <=768px) and (hover: hover) {
+  .burger:hover {
+    color: var(--accent);
+    transform: rotate(8deg);
   }
 }
