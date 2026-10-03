@@ -243,6 +243,7 @@
   .footer__content::before {
     bottom: -10%;
     opacity: 0.1;
+    width: 100%;
   }
 
   .footer__map {
