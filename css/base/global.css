@@ -15,6 +15,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.hero,
+.portfolio,
+.testimonials,
+.blog,
+.footer {
+  scroll-margin-top: 40px;
+}
+
 .body {
   position: relative;
   min-width: 320px;

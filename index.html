@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>раТАТТООй</title>
+  <title>раТАТТООй — тату-мастер Денис Моторин</title>
+  <meta name="description"
+    content="Тату-мастер Денис Моторин: авторские эскизы, плотная линия, чистая композиция. Портфолио работ, отзывы клиентов и запись на сеанс.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="раТАТТООй">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="раТАТТООй — тату-мастер Денис Моторин">
+  <meta property="og:description"
+    content="Авторские эскизы, плотная линия, чистая композиция. Портфолио работ, отзывы клиентов и запись на сеанс.">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="раТАТТООй — тату-мастер Денис Моторин">
+  <meta name="twitter:description"
+    content="Авторские эскизы, плотная линия, чистая композиция. Портфолио работ и запись на сеанс.">
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="apple-touch-icon" href="./apple-touch-icon.png">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["TattooParlor", "LocalBusiness"],
+      "name": "раТАТТООй",
+      "description": "Тату-мастер Денис Моторин: авторские эскизы, плотная линия, чистая композиция. Портфолио работ, отзывы клиентов и запись на сеанс.",
+      "inLanguage": "ru-RU",
+      "founder": {
+        "@type": "Person",
+        "name": "Денис Моторин",
+        "jobTitle": "Тату-мастер"
+      },
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Нанесение татуировки",
+          "serviceType": "Тату-сеанс"
+        }
+      }
+    }
+  </script>
   <link rel="stylesheet" href="./css/index.css">
 </head>
 
@@ -18,24 +56,34 @@
             ДМ
           </a>
           <div class="header__menu" id="header__menu" data-burger-menu>
-            <a href="#" class="header__contact">
-              TG @lorem
+            <a target="_blank" href="https://t.me/Den_Motorin" class="header__contact">
+              TG @Den_Motorin
             </a>
             <nav class="header__nav">
               <ul class="header__list">
                 <li class="header__item">
-                  <a href="#" class="header__link">
+                  <a href="#top" class="header__link">
+                    Главная
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="#about" class="header__link">
                     Обо мне
                   </a>
                 </li>
                 <li class="header__item">
-                  <a href="#" class="header__link">
+                  <a href="#portfolio" class="header__link">
                     Работы
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="#blog" class="header__link">
+                    Блог
                   </a>
                 </li>
               </ul>
             </nav>
-            <a href="#" class="header__action">
+            <a href="#contacts" class="header__action">
               Связаться
             </a>
           </div>
@@ -51,7 +99,7 @@
     </header>
 
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="about">
         <div class="container">
           <div class="hero__inner">
             <h1 class="hero__title">
@@ -80,7 +128,7 @@
         </div>
       </section>
 
-      <section class="portfolio">
+      <section class="portfolio" id="portfolio">
         <div class="container">
           <div class="portfolio__inner">
             <h2 class="portfolio__title">
@@ -145,7 +193,7 @@
         </div>
       </section>
 
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <div class="container">
           <div class="testimonials__inner">
             <h2 class="testimonials__title">
@@ -400,7 +448,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="container">
         <div class="footer__inner">
           <h2 class="footer__title">
@@ -423,13 +471,13 @@
                 <button class="footer__actions-btn">
                   Записаться на сеанс
                 </button>
-                <a href="#" class="footer__actions-link">
+                <a target="_blank" href="https://t.me/Den_Motorin" class="footer__actions-link">
                   <svg>
                     <use href="./icons/sprite.svg#telegram" />
                   </svg>
                   Написать в Telegram
                 </a>
-                <a href="#" class="footer__actions-link">
+                <a target="_blank" href="https://vk.ru/motorin_den" class="footer__actions-link">
                   <svg>
                     <use href="./icons/sprite.svg#vk" />
                   </svg>
@@ -459,7 +507,7 @@
                     </a>
                   </li>
                   <li class="footer__socials-item">
-                    <a href="#" class="footer__socials-link">
+                    <a href="https://vk.ru/motorin_den" class="footer__socials-link">
                       <svg viewBox="0 0 36.6895 22.8936" xmlns="http://www.w3.org/2000/svg"
                         xmlns:xlink="http://www.w3.org/1999/xlink" width="36.689453" height="22.893555" fill="none"
                         customFrame="#000000">
@@ -496,17 +544,17 @@
             <nav class="footer__nav">
               <ul class="footer__nav-list">
                 <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">
+                  <a href="#about" class="footer__nav-link">
                     Обо мне
                   </a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">
+                  <a href="#portfolio" class="footer__nav-link">
                     Работы
                   </a>
                 </li>
                 <li class="footer__nav-item">
-                  <a href="#" class="footer__nav-link">
+                  <a href="#contacts" class="footer__nav-link">
                     Связаться
                   </a>
                 </li>
