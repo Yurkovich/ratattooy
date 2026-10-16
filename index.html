@@ -17,27 +17,29 @@
           <a href="/" class="header__logo">
             ДМ
           </a>
-          <a href="#" class="header__contact">
-            TG @lorem
-          </a>
-          <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#" class="header__link">
-                  Обо мне
-                </a>
-              </li>
-              <li class="header__item">
-                <a href="#" class="header__link">
-                  Работы
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <a href="#" class="header__action">
-            Связаться
-          </a>
-          <button class="header__burger burger" aria-label="Открыть меню" aria-expanded="false"
+          <div class="header__menu" id="header__menu" data-burger-menu>
+            <a href="#" class="header__contact">
+              TG @lorem
+            </a>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__item">
+                  <a href="#" class="header__link">
+                    Обо мне
+                  </a>
+                </li>
+                <li class="header__item">
+                  <a href="#" class="header__link">
+                    Работы
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="header__action">
+              Связаться
+            </a>
+          </div>
+          <button class="header__burger burger" data-burger-toggle aria-label="Открыть меню" aria-expanded="false"
             aria-controls="header__menu">
             <svg width="24" height="24">
               <use class="burger__icon-menu" href="./icons/sprite.svg#menu-burger"></use>
@@ -238,7 +240,7 @@
                     dolore eu fugiat nulla pariatur. Excepteur sint occ do consequat. D
                   </p>
                   <span class="testimonials__name">
-                    Арина Мишкина
+                    Аркадий Паровозов
                   </span>
                   <div class="testimonials__info">
                     <div class="testimonials__rating">
@@ -307,7 +309,7 @@
                     dolore eu fugiat nulla pariatur. Excepteur sint occ do consequat. D
                   </p>
                   <span class="testimonials__name">
-                    Арина Мишкина
+                    Аркадий Паровозов
                   </span>
                   <div class="testimonials__info">
                     <div class="testimonials__rating">
@@ -322,6 +324,77 @@
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="blog" id="blog">
+        <div class="container">
+          <div class="blog__inner">
+            <h2 class="blog__title">
+              Блог
+            </h2>
+            <ul class="blog__list">
+              <li class="blog__item">
+                <a href="./post.html" class="blog__img">
+                  <img src="./media/portfolio/2.webp" alt="Подготовка к сеансу татуировки">
+                </a>
+                <h3 class="blog__subtitle">
+                  Как подготовиться к первому сеансу
+                </h3>
+                <p class="blog__text">
+                  Что взять с собой, как подготовить кожу и почему выспаться перед сеансом важнее, чем кажется.
+                </p>
+                <a href="./post.html" class="blog__button">
+                  Читать далее
+                </a>
+              </li>
+              <li class="blog__item">
+                <a href="./post.html" class="blog__img">
+                  <img src="./media/portfolio/6.webp" alt="Заживление татуировки">
+                </a>
+                <h3 class="blog__subtitle">
+                  Уход за татуировкой в первые две недели
+                </h3>
+                <p class="blog__text">
+                  Чем обрабатывать, когда мыть и какие изменения стоит показать мастеру сразу.
+                </p>
+                <a href="./post.html" class="blog__button">
+                  Читать далее
+                </a>
+              </li>
+              <li class="blog__item">
+                <a href="./post.html" class="blog__img">
+                  <img src="./media/portfolio/8.webp" alt="Эскиз татуировки">
+                </a>
+                <h3 class="blog__subtitle">
+                  Эскиз: от идеи до финальной линии
+                </h3>
+                <p class="blog__text">
+                  Как проходит обсуждение референсов, сколько правок возможно и что влияет на итоговый эскиз.
+                </p>
+                <a href="./post.html" class="blog__button">
+                  Читать далее
+                </a>
+              </li>
+              <li class="blog__item">
+                <a href="./post.html" class="blog__img">
+                  <img src="./media/portfolio/3.webp" alt="Стоимость татуировки">
+                </a>
+                <h3 class="blog__subtitle">
+                  Что влияет на стоимость татуировки
+                </h3>
+                <p class="blog__text">
+                  Размер, детализация, место и количество сеансов — разбираем, из чего складывается цена.
+                </p>
+                <a href="./post.html" class="blog__button">
+                  Читать далее
+                </a>
+              </li>
+            </ul>
+            <a href="./blog.html" class="blog__link">
+              Смотреть все статьи
+            </a>
           </div>
         </div>
       </section>
@@ -468,6 +541,7 @@
   <script src="./scripts/fslightbox.js"></script>
   <script src="./scripts/swiper-bundle.min.js"></script>
   <script src="./scripts/testimonials-slider.js"></script>
+  <script type="module" src="./scripts/burger-menu.js"></script>
 </body>
 
 </html>

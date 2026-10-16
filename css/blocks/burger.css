@@ -1,0 +1,196 @@
+.header__menu {
+  display: contents;
+}
+
+html.is-burger-lock,
+html.is-burger-lock .body {
+  overflow: hidden;
+}
+
+html.is-burger-lock {
+  padding-right: var(--burger-scrollbar, 0px);
+}
+
+@media (width <=768px) {
+
+  .header {
+    position: relative;
+  }
+
+  .header.burger--open {
+    z-index: 100;
+  }
+
+  .header__logo,
+  .burger {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header__menu {
+    --burger-duration: 280ms;
+    --burger-easing: cubic-bezier(0.22, 1, 0.36, 1);
+    --burger-stagger: 70ms;
+
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(2rem, 1.4rem + 3vw, 3.6rem);
+    padding: clamp(10rem, 8rem + 6vw, 14rem) 15px clamp(4rem, 2rem + 8vw, 8rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background-color: var(--main-bg);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition:
+      opacity var(--burger-duration) var(--burger-easing),
+      visibility 0s linear var(--burger-duration);
+  }
+
+  .header.burger--open .header__menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transition:
+      opacity var(--burger-duration) var(--burger-easing),
+      visibility 0s linear;
+  }
+
+  .header__menu>* {
+    width: 100%;
+  }
+
+  .header.burger--open .header__menu>* {
+    animation: burger-item-in var(--burger-duration) var(--burger-easing) backwards;
+    animation-delay: var(--burger-stagger);
+  }
+
+  .header.burger--open .header__menu>*:nth-child(2) {
+    animation-delay: calc(var(--burger-stagger) * 2);
+  }
+
+  .header.burger--open .header__menu>*:nth-child(3) {
+    animation-delay: calc(var(--burger-stagger) * 3);
+  }
+
+  @keyframes burger-item-in {
+    from {
+      opacity: 0;
+      transform: translateY(1.4rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .header__menu .header__nav {
+    order: 1;
+    margin: 0;
+  }
+
+  .header__menu .header__action {
+    order: 2;
+  }
+
+  .header__menu .header__contact {
+    order: 3;
+    margin: 0;
+  }
+
+  .header__menu .header__contact,
+  .header__menu .header__nav,
+  .header__menu .header__action {
+    display: block;
+  }
+
+  .header__menu .header__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .header__menu .header__item {
+    border-bottom: 1px solid rgba(7, 7, 7, 0.12);
+  }
+
+  .header__menu .header__link {
+    display: block;
+    padding: clamp(1.4rem, 1rem + 2vw, 2.2rem) 0;
+    font-family: var(--ff-title);
+    font-size: clamp(2.6rem, 1.8rem + 4vw, 4.2rem);
+    line-height: 1.1;
+    transition:
+      color var(--transition-fast),
+      padding-left var(--transition-base);
+  }
+
+  .header__menu .header__link::after,
+  .header__menu .header__action::after,
+  .header__menu .header__contact::after {
+    display: none;
+  }
+
+  .header__menu .header__action {
+    padding: clamp(1.6rem, 1.2rem + 2vw, 2.2rem) 2rem;
+    font-size: clamp(1.8rem, 1.6rem + 1vw, 2.4rem);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--main-text);
+    border-radius: 32px;
+    transition:
+      background-color var(--transition-base),
+      color var(--transition-base),
+      transform var(--transition-base);
+  }
+
+  .header__menu .header__contact {
+    padding: clamp(1.4rem, 1rem + 2vw, 2rem) 2rem;
+    font-size: clamp(1.6rem, 1.5rem + 0.6vw, 2rem);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 32px;
+    transition:
+      background-color var(--transition-base),
+      color var(--transition-base),
+      transform var(--transition-base);
+  }
+
+  @media (hover: hover) {
+    .header__menu .header__link:hover {
+      padding-left: 1rem;
+      color: var(--accent);
+    }
+
+    .header__menu .header__action:hover {
+      color: var(--main-text);
+      background-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .header__menu .header__contact:hover {
+      color: var(--accent);
+      background-color: #f5f5f5;
+      transform: translateY(-3px);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .header__menu,
+  .header__menu>* {
+    transition: none;
+    transform: none;
+    animation: none;
+  }
+}

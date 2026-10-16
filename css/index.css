@@ -6,7 +6,10 @@
 
 /* blocks */
 @import './blocks/header.css';
+@import './blocks/burger.css';
 @import './blocks/hero.css';
 @import './blocks/portfolio.css';
 @import './blocks/testimonials.css';
+@import './blocks/blog.css';
+@import './blocks/post.css';
 @import './blocks/footer.css';
