@@ -13,14 +13,16 @@ const testimonialsSwiper = new Swiper(".testimonials__swiper", {
     0: {
       slidesPerView: 1,
       spaceBetween: 10,
-      autoHeight: true,
     },
     768: {
       slidesPerView: 2,
+      spaceBetween: 20,
+      autoHeight: false,
     },
     1024: {
       slidesPerView: 3,
+      spaceBetween: 33,
+      autoHeight: false,
     },
   },
 })
-

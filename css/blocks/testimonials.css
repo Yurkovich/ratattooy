@@ -147,10 +147,6 @@
   opacity: 0.5;
 }
 
-.swiper {
-  height: 600px;
-}
-
 .swiper-button-lock {
   display: inline-flex;
 }
@@ -173,10 +169,6 @@
 }
 
 @media (max-width: 768px) {
-  .swiper {
-    height: 410px;
-  }
-
   .testimonials__text {
     line-height: 1.5;
   }
