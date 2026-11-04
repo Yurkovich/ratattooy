@@ -1,4 +1,6 @@
-.hero {}
+.hero {
+  margin-bottom: clamp(8rem, 6.25rem + 5.48vw, 16rem);
+}
 
 .hero__inner {
   padding: clamp(4rem, 1.9rem + 5.67vw, 12rem) 0;

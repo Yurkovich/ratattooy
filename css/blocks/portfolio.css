@@ -1,5 +1,5 @@
 .portfolio {
-  margin-bottom: 160px;
+  margin-bottom: clamp(8rem, 6.25rem + 5.48vw, 16rem);
 }
 
 .portfolio__inner {
