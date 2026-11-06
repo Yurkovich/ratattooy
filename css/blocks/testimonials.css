@@ -33,6 +33,7 @@
   padding: 30px;
   border: 1px solid var(--main-text);
   transition: border-color var(--transition-base), background-color var(--transition-base);
+  height: auto;
 }
 
 @media (hover: hover) {
